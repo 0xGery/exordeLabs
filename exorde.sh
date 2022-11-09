@@ -15,8 +15,9 @@ sleep 2
 if [ ! $Address ]; then
 	read -p "Masukin Address 0xMu: " Address
 	echo 'export Address='$Address >> $HOME/.bash_profile
-source $HOME/.bash_profile
 fi
+
+source $HOME/.bash_profile
 
 echo '================================================='
 echo -e "Address 0xMu: \e[1m\e[32m$Address\e[0m"
@@ -30,10 +31,8 @@ sudo apt update -y && sudo apt install apt-transport-https ca-certificates curl 
 echo -e "\e[1m\e[32m2. Installing Screen... \e[0m" && sleep 1
 sudo apt install -y build-essential libssl-dev libffi-dev git curl screen
 
-echo -e "\e[1m\e[32m2. cloning github... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m2. cloning github & Build exorde... \e[0m" && sleep 1
 cd $Home
 git clone https://github.com/exorde-labs/ExordeModuleCLI.git
 cd ExordeModuleCLI
 docker build -t exorde-cli
-
-echo '=============== SETUP FINISHED ==================='
