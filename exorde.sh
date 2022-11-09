@@ -41,4 +41,3 @@ docker build -t exorde-cli .
 
 echo -e "\e[1m\e[32m2. Docker Run... \e[0m" && sleep 1
 screen -S exorde
-docker run -it exorde-cli -m $Address -l 2
