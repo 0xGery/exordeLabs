@@ -16,6 +16,7 @@ if [ ! $Address ]; then
 	read -p "Masukin Address 0xMu: " Address
 	echo 'export Address='$Address >> $HOME/.bash_profile
 source $HOME/.bash_profile
+fi
 
 echo '================================================='
 echo -e "Address 0xMu: \e[1m\e[32m$Address\e[0m"
