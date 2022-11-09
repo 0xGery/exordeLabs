@@ -35,4 +35,4 @@ echo -e "\e[1m\e[32m2. cloning github & Build exorde... \e[0m" && sleep 1
 cd $Home
 git clone https://github.com/exorde-labs/ExordeModuleCLI.git
 cd ExordeModuleCLI
-docker build -t exorde-cli
+docker build -t exorde-cli .
