@@ -12,5 +12,11 @@ Input Address 0x mu
 docker run -it exorde-cli -m $Address -l 2
 ```
 
-### step 4 Keluar dari docker
+### step 4 Keluar dari Screen
 CTRL A + D
+
+
+### Masuk Screen
+```
+screen -rd exorde
+```
