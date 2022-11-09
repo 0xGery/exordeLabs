@@ -30,8 +30,9 @@ echo -e "\e[1m\e[32m2. Installing Screen... \e[0m" && sleep 1
 sudo apt install -y build-essential libssl-dev libffi-dev git curl screen
 
 echo -e "\e[1m\e[32m2. cloning github... \e[0m" && sleep 1
-gh repo clone exorde-labs/ExordeModuleCLI
-
-echo -e "\e[1m\e[32m2. Building exorde... \e[0m" && sleep 1
+cd $Home
+git clone https://github.com/exorde-labs/ExordeModuleCLI.git
 cd ExordeModuleCLI
 docker build -t exorde-cli
+
+echo '=============== SETUP FINISHED ==================='
