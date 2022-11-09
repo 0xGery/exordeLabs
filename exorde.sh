@@ -35,7 +35,3 @@ gh repo clone exorde-labs/ExordeModuleCLI
 echo -e "\e[1m\e[32m2. Building exorde... \e[0m" && sleep 1
 cd ExordeModuleCLI
 docker build -t exorde-cli
-
-echo -e "\e[1m\e[32m2. Running Exorde... \e[0m" && sleep 1
-screen -S exorde
-docker run -it exorde-cli -m $Address -l 2
