@@ -9,7 +9,7 @@ Input Address 0x mu
 
 ### Step 3
 ```
-docker run -it exorde-cli -m $Address -l 2
+docker run -it exorde-cli -m $Address -l 4
 ```
 
 ### step 4 Keluar dari Screen
