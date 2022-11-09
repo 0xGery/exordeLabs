@@ -31,8 +31,10 @@ sudo apt update -y && sudo apt install apt-transport-https ca-certificates curl 
 echo -e "\e[1m\e[32m2. Installing Screen... \e[0m" && sleep 1
 sudo apt install -y build-essential libssl-dev libffi-dev git curl screen
 
-echo -e "\e[1m\e[32m2. cloning github & Build exorde... \e[0m" && sleep 1
+echo -e "\e[1m\e[32m2. cloning github... \e[0m" && sleep 1
 cd $Home
 git clone https://github.com/exorde-labs/ExordeModuleCLI.git
+
+echo -e "\e[1m\e[32m2. Docker Build... \e[0m" && sleep 1
 cd ExordeModuleCLI
 docker build -t exorde-cli .
